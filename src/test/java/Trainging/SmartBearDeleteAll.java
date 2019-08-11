@@ -1,4 +1,4 @@
-package TestingNG;
+package Trainging;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
