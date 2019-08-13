@@ -11,6 +11,7 @@ public class ExpliciteWaitPractice {
     @Test
     public void waitingExplicitly(){
 
+        Driver.getDriver().get("https://www.google.com/");
         WebElement googleSearch  = Driver.getDriver().findElement(By.name("q"));
         // 1- I need to create an object from WebDriverWait class
         // 2- Pass two arguments inside: first argument is driver, second is the time that
@@ -22,9 +23,10 @@ public class ExpliciteWaitPractice {
         // that I want to wait for
 
         WebElement googleWait = wait.until(ExpectedConditions.visibilityOf(googleSearch));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("xpath")));
+      //  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("xpath")));
 
         googleWait.sendKeys("search for something");
+      //  wait.until(ExpectedConditions.vi(By.xpath(""),""));
 
 
     }
